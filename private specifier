@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+    class A{
+        private:
+            int a;
+        int display(a){
+       cout<<a;
+        }
+        };
+
+
+int main(){
+    A obj1;
+   int instant =obj1.display();
+    cout<<instant<<endl;
+
+}
