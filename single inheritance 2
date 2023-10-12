@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class addition{
+    public:
+    int a=10;
+    int b=19;
+    public:
+    void sum();
+};
+void addition::sum(){
+    int ad=a+b;
+    cout<<ad<<endl;
+}
+class add : private addition{
+public:
+    void sum2();
+};
+void add::sum2(){
+    sum();
+}
+int main(){
+    add  c;
+    c.sum2();
+    return 0;
+}
+
